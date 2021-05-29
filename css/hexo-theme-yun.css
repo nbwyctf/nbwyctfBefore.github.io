@@ -240,6 +240,11 @@ body::before {
   align-items: center;
   height: 100vh;
 }
+.banner-char-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .vertical-line-top,
 .vertical-line-bottom {
   display: flex;
@@ -1844,6 +1849,17 @@ body::before {
   margin-top: 0;
   margin-bottom: 1rem;
   line-height: 1.5;
+}
+.site-author-status {
+  position: absolute;
+  height: 1.8rem;
+  width: 1.8rem;
+  bottom: 0;
+  right: 0;
+  line-height: 1.8rem;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  background-color: #fff;
 }
 .site-name {
   color: var(--hty-text-color);
