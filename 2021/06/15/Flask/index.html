@@ -6,12 +6,12 @@
 </script><link id="light-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism.css" media="(prefers-color-scheme: light)"><link id="dark-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-tomorrow.css" media="(prefers-color-scheme: dark)"><link rel="icon" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest/css/hexo-theme-yun.css" as="style"><link rel="preload" href="https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest/js/utils.js" as="script"><link rel="preload" href="https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script id="yun-config">
     const Yun = window.Yun || {};
     window.CONFIG = {"hostname":"nbwyctf.github.io","root":"/","title":"穿堂风的小窝","version":"1.6.1","mode":"auto","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"搜索...","empty":"找不到您查询的内容: ${query}","hits":"找到 ${hits} 条结果","hits_time":"找到 ${hits} 条结果（用时 ${time} 毫秒）"},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","say":{"api":"https://v1.hitokoto.cn","hitokoto":true},"fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
-  </script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest/css/hexo-theme-yun.css"><script src="https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest/js/utils.js"></script><script src="https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest/js/hexo-theme-yun.js"></script><script src="//at.alicdn.com/t/font_2580000_1bbml5xtge8.js" async></script><meta name="description" content="#Flask应用 from flask import Flask app &#x3D; Flask(__name__)  @app.route(&#39;&#x2F;&#39;) def hello_world():     return &#39;Hello,World&#39;  app.run()  #Flask路由 from flask import Flask,url_for app &#x3D; Flask(__name__)  @app.rou">
+  </script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest/css/hexo-theme-yun.css"><script src="https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest/js/utils.js"></script><script src="https://cdn.jsdelivr.net/gh/YunYouJun/yunyoujun.github.io@latest/js/hexo-theme-yun.js"></script><script src="//at.alicdn.com/t/font_2580000_1bbml5xtge8.js" async></script><meta name="description" content="#Flask应用 from flask import Flask app &#x3D; Flask(__name__)  @app.route(&#39;&#x2F;&#39;) def hello_world():     return &#39;Hello,World&#39;  app.run()    #Flask路由 from flask import Flask,url_for app &#x3D; Flask(__name__)  @app.r">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Flask">
 <meta property="og:url" content="https://nbwyctf.github.io/2021/06/15/Flask/index.html">
 <meta property="og:site_name" content="穿堂风的小站">
-<meta property="og:description" content="#Flask应用 from flask import Flask app &#x3D; Flask(__name__)  @app.route(&#39;&#x2F;&#39;) def hello_world():     return &#39;Hello,World&#39;  app.run()  #Flask路由 from flask import Flask,url_for app &#x3D; Flask(__name__)  @app.rou">
+<meta property="og:description" content="#Flask应用 from flask import Flask app &#x3D; Flask(__name__)  @app.route(&#39;&#x2F;&#39;) def hello_world():     return &#39;Hello,World&#39;  app.run()    #Flask路由 from flask import Flask,url_for app &#x3D; Flask(__name__)  @app.r">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-06-15T13:05:00.000Z">
 <meta property="article:modified_time" content="2021-06-15T15:15:01.000Z">
@@ -27,6 +27,8 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
     <span class="token keyword">return</span> <span class="token string">'Hello,World'</span>
 
 app<span class="token punctuation">.</span>run<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+
+
 
 <p>#Flask路由</p>
 <pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>url_for
@@ -46,6 +48,8 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 
 app<span class="token punctuation">.</span>run<span class="token punctuation">(</span>host<span class="token operator">=</span><span class="token string">"0.0.0.0"</span><span class="token punctuation">)</span>
 </code></pre>
+
+
 
 <p>#唯一的URL/重定向行为</p>
 <p>以下两条规则的不同之处在于是否使用尾部的斜杠。</p>
@@ -100,6 +104,8 @@ app <span class="token operator">=</span> Flask<span class="token punctuation">(
 
 app<span class="token punctuation">.</span>run<span class="token punctuation">(</span>host<span class="token operator">=</span><span class="token string">"0.0.0.0"</span><span class="token punctuation">)</span></code></pre>
 
+
+
 <h1 id="JSON格式与POSTMAN"><a href="#JSON格式与POSTMAN" class="headerlink" title="JSON格式与POSTMAN"></a>JSON格式与POSTMAN</h1><blockquote>
 <p><code>http://127.0.0.1:5000/test/my/first</code></p>
 </blockquote>
@@ -142,6 +148,8 @@ app<span class="token punctuation">.</span>run<span class="token punctuation">(<
     resp<span class="token operator">=</span>make_response<span class="token punctuation">(</span>render_template<span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
     resp<span class="token punctuation">.</span>set_cookie<span class="token punctuation">(</span><span class="token string">'username'</span><span class="token punctuation">,</span> <span class="token string">'the username'</span><span class="token punctuation">)</span>
 <span class="token keyword">return</span> resp</code></pre>
+
+
 
 <h1 id="Flask-session"><a href="#Flask-session" class="headerlink" title="Flask session"></a>Flask session</h1><pre class="language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> flask <span class="token keyword">import</span> Flask<span class="token punctuation">,</span>request<span class="token punctuation">,</span>jsonify<span class="token punctuation">,</span>session
 app <span class="token operator">=</span> Flask<span class="token punctuation">(</span>__name__<span class="token punctuation">)</span>
