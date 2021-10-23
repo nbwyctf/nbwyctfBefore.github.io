@@ -102,7 +102,7 @@ ActionChains<span class="token punctuation">(</span>driver<span class="token pun
 <span class="token comment">#模拟滚动条操作</span>
 driver<span class="token punctuation">.</span>set_window_size<span class="token punctuation">(</span><span class="token number">800</span><span class="token punctuation">,</span><span class="token number">600</span><span class="token punctuation">)</span> <span class="token comment">#调整屏幕分辨率为800*600像素</span>
 <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    driver<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollYb(0,40)'</span><span class="token punctuation">)</span> <span class="token comment">#向下滚动40像素</span>
+    driver<span class="token punctuation">.</span>execute_script<span class="token punctuation">(</span><span class="token string">'window.scrollBy(0,40)'</span><span class="token punctuation">)</span> <span class="token comment">#向下滚动40像素</span>
     sleep<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span></code></pre>
 
 <h1 id="其他相关应用"><a href="#其他相关应用" class="headerlink" title="其他相关应用"></a>其他相关应用</h1><h2 id="前进、后退与刷新"><a href="#前进、后退与刷新" class="headerlink" title="前进、后退与刷新"></a>前进、后退与刷新</h2><pre class="language-python" data-language="python"><code class="language-python"><span class="token comment"># 前进</span>
